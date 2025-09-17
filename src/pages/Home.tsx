@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Settings, Wrench, BarChart3, Factory, Award, Users } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -157,12 +158,205 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Key Product Categories */}
+      <section className="py-20 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Product Categories</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Comprehensive range of automation products designed for diverse industrial applications
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Automation & Testing Solutions",
+                icon: "🔧",
+                description: "End-of-line testing, pressure decay, water dip, and helium leak testing SPMs",
+                count: "4+ Products"
+              },
+              {
+                title: "Robotic Welding Solutions", 
+                icon: "🤖",
+                description: "Complete robotic welding cells, fixtures for chassis, drive shaft, and track assembly",
+                count: "6+ Products"
+              },
+              {
+                title: "Welding SPMs",
+                icon: "⚡",
+                description: "Twin torch, servo driven, horizontal, rotary, and semi-automated welding machines",
+                count: "5+ Products"
+              },
+              {
+                title: "Machining & Powertrain",
+                icon: "🏭",
+                description: "HMC/VMC fixtures, hydraulic press, and powered conveyor systems",
+                count: "3+ Products"
+              },
+              {
+                title: "Welding Manipulators",
+                icon: "🔄",
+                description: "Manual and motorized welding positioners for precise part positioning",
+                count: "2+ Products"
+              },
+              {
+                title: "Design & Engineering",
+                icon: "📐",
+                description: "Complete automation solutions, reverse engineering, and new product development",
+                count: "6+ Services"
+              }
+            ].map((category, index) => (
+              <Card key={index} className="card-gradient shadow-sara scale-on-hover text-center">
+                <CardHeader>
+                  <div className="text-5xl mb-4">{category.icon}</div>
+                  <CardTitle className="text-xl mb-2">{category.title}</CardTitle>
+                  <div className="text-sm text-primary font-semibold">{category.count}</div>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-sm leading-relaxed">
+                    {category.description}
+                  </CardDescription>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
 
           {/* CTA Button */}
           <div className="text-center mt-16">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg" asChild>
-              <Link to="/contact">Request Custom Solution</Link>
+              <Link to="/products">View All Products</Link>
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Capabilities */}
+      <section className="py-20 bg-muted/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Capabilities</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Advanced engineering capabilities backed by cutting-edge technology and skilled professionals
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            {/* Design Capabilities */}
+            <div className="bg-background rounded-2xl p-8 shadow-lg">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                <Settings className="w-8 h-8 text-primary" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Design Excellence</h3>
+              <p className="text-muted-foreground mb-6">
+                Industry-leading CAD software and engineering expertise for precision design solutions.
+              </p>
+              <div className="space-y-2">
+                {["SolidWorks 3D modeling", "CATIA advanced design", "AutoCAD technical drawings", "Inventor parametric design", "SolidEdge synchronous technology"].map((item, index) => (
+                  <div key={index} className="flex items-center text-sm">
+                    <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                    {item}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Manufacturing Capabilities */}
+            <div className="bg-background rounded-2xl p-8 shadow-lg">
+              <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-6">
+                <Wrench className="w-8 h-8 text-secondary" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Manufacturing Excellence</h3>
+              <p className="text-muted-foreground mb-6">
+                State-of-the-art manufacturing capabilities with precision machining and fabrication.
+              </p>
+              <div className="space-y-2">
+                {["CNC multi-axis machining", "VMC complex geometries", "Sheet metal fabrication", "Precision grinding operations", "Turning, drilling & lathe work"].map((item, index) => (
+                  <div key={index} className="flex items-center text-sm">
+                    <div className="w-2 h-2 bg-secondary rounded-full mr-3"></div>
+                    {item}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Testing & Simulation */}
+            <div className="bg-background rounded-2xl p-8 shadow-lg">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                <BarChart3 className="w-8 h-8 text-primary" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Testing & Simulation</h3>
+              <p className="text-muted-foreground mb-6">
+                Advanced simulation and testing services for process optimization and validation.
+              </p>
+              <div className="space-y-2">
+                {["Process visualization", "Automation flow testing", "Finite element analysis", "Virtual commissioning", "Quality assurance testing"].map((item, index) => (
+                  <div key={index} className="flex items-center text-sm">
+                    <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                    {item}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Process */}
+      <section className="py-20 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Process</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              A systematic approach to delivering exceptional automation solutions from concept to completion
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { 
+                step: "01", 
+                title: "Consultation & Analysis", 
+                description: "Understanding your requirements, challenges, and operational needs through detailed consultation.",
+                icon: "👥"
+              },
+              { 
+                step: "02", 
+                title: "Design & Engineering", 
+                description: "Creating detailed 3D designs, specifications, and simulations using advanced CAD software.",
+                icon: "📐"
+              },
+              { 
+                step: "03", 
+                title: "Manufacturing & Testing", 
+                description: "Precision manufacturing with quality control and comprehensive testing procedures.",
+                icon: "🏭"
+              },
+              { 
+                step: "04", 
+                title: "Installation & Support", 
+                description: "Professional installation, commissioning, training, and ongoing technical support.",
+                icon: "🔧"
+              },
+            ].map((item, index) => (
+              <Card key={index} className="card-gradient shadow-sara text-center scale-on-hover">
+                <CardHeader>
+                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold text-xl mx-auto mb-4">
+                    {item.step}
+                  </div>
+                  <div className="text-4xl mb-4">{item.icon}</div>
+                  <CardTitle className="text-xl mb-2">{item.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-sm leading-relaxed">
+                    {item.description}
+                  </CardDescription>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
