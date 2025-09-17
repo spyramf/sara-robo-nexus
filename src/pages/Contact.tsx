@@ -37,17 +37,25 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: MapPin,
-      title: "Our Location",
+      title: "Works Address",
       content: [
-        "Survey No. 38/1, Shade No. 3,",
-        "Nanashri Warehouse, Khedekar Industry Estate,",
-        "Narhegaon - 411041, Pune, Maharashtra"
+        "S.No.28/23, Shed No-01 & 02, Phase-1,",
+        "Anant Industrial Estate, Dhayari Narhe Road,",
+        "Dhayari, Pune 411041"
+      ],
+    },
+    {
+      icon: MapPin,
+      title: "Office Address", 
+      content: [
+        "S.NO.34/35, Flat No. C1-305, Premia Society,",
+        "Near Zeal College, Narhe, Pune 411041"
       ],
     },
     {
       icon: Phone,
-      title: "Phone Number",
-      content: ["+91-9960222472"],
+      title: "Phone Numbers",
+      content: ["+91-9960222472", "+91-8668741866"],
     },
     {
       icon: Mail,
@@ -59,12 +67,8 @@ const Contact = () => {
     },
     {
       icon: Clock,
-      title: "Business Hours",
-      content: [
-        "Monday - Friday: 9:00 AM - 6:00 PM",
-        "Saturday: 9:00 AM - 2:00 PM",
-        "Sunday: Closed"
-      ],
+      title: "Website",
+      content: ["www.sararoboautomation.com"],
     },
   ];
 
@@ -226,7 +230,7 @@ const Contact = () => {
                 <h3 className="text-xl font-semibold mb-2">Interactive Map</h3>
                 <p className="text-muted-foreground">
                   Google Maps integration would be embedded here showing our exact location 
-                  at Survey No. 38/1, Shade No. 3, Nanashri Warehouse, Khedekar Industry Estate, Narhegaon - 411041
+                  at S.No.28/23, Shed No-01 & 02, Phase-1, Anant Industrial Estate, Dhayari Narhe Road, Dhayari, Pune 411041
                 </p>
               </div>
             </div>

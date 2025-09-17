@@ -56,8 +56,24 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Our Specializations */}
+      {/* Intro Section */}
       <section className="py-20 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Your Partner for Automation Solution</h2>
+            <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
+              We specialize in innovative automation solutions including robotic welding cells, leak testing SPMs, 
+              machining fixtures, and process automation for industries worldwide.
+            </p>
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg" asChild>
+              <Link to="/products">Explore Our Solutions</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Specializations */}
+      <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Specializations</h2>
