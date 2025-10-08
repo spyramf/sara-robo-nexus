@@ -5,7 +5,7 @@ import { Settings, Wrench, BarChart3, Factory, Award, Users } from "lucide-react
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { AuroraBackground } from "@/components/ui/aurora-background";
-import { GlowingEffect } from "@/components/ui/glowing-effect";
+import { ShineBorder } from "@/components/ui/shine-border";
 import { motion } from "framer-motion";
 
 const Home = () => {
@@ -222,28 +222,25 @@ const Home = () => {
                 count: "6+ Services",
               },
             ].map((category, index) => (
-              <div key={index} className="relative min-h-[16rem]">
-                <div className="relative h-full rounded-xl border border-border p-1">
-                  <GlowingEffect
-                    spread={40}
-                    glow={true}
-                    disabled={false}
-                    proximity={64}
-                    inactiveZone={0.01}
-                    borderWidth={2}
-                  />
-                  <Card className="relative h-full card-gradient shadow-sara scale-on-hover text-center border-0">
-                    <CardHeader>
-                      <div className="text-5xl mb-4">{category.icon}</div>
-                      <CardTitle className="text-xl mb-2">{category.title}</CardTitle>
-                      <div className="text-sm text-primary font-semibold">{category.count}</div>
-                    </CardHeader>
-                    <CardContent>
-                      <CardDescription className="text-sm leading-relaxed">{category.description}</CardDescription>
-                    </CardContent>
-                  </Card>
-                </div>
-              </div>
+              <ShineBorder
+                key={index}
+                borderRadius={12}
+                borderWidth={2}
+                duration={12}
+                color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
+                className="w-full min-w-0 h-full p-0 bg-transparent dark:bg-transparent"
+              >
+                <Card className="h-full card-gradient shadow-sara scale-on-hover text-center border-0">
+                  <CardHeader>
+                    <div className="text-5xl mb-4">{category.icon}</div>
+                    <CardTitle className="text-xl mb-2">{category.title}</CardTitle>
+                    <div className="text-sm text-primary font-semibold">{category.count}</div>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-sm leading-relaxed">{category.description}</CardDescription>
+                  </CardContent>
+                </Card>
+              </ShineBorder>
             ))}
           </div>
 
@@ -384,18 +381,27 @@ const Home = () => {
                 icon: "🔧",
               },
             ].map((item, index) => (
-              <Card key={index} className="card-gradient shadow-sara text-center scale-on-hover">
-                <CardHeader>
-                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold text-xl mx-auto mb-4">
-                    {item.step}
-                  </div>
-                  <div className="text-4xl mb-4">{item.icon}</div>
+              <ShineBorder
+                key={index}
+                borderRadius={12}
+                borderWidth={2}
+                duration={14}
+                color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
+                className="w-full min-w-0 h-full p-0 bg-transparent dark:bg-transparent"
+              >
+                <Card className="h-full card-gradient shadow-sara text-center scale-on-hover border-0">
+                  <CardHeader>
+                    <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold text-xl mx-auto mb-4">
+                      {item.step}
+                    </div>
+                    <div className="text-4xl mb-4">{item.icon}</div>
                   <CardTitle className="text-xl mb-2">{item.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-sm leading-relaxed">{item.description}</CardDescription>
                 </CardContent>
               </Card>
+              </ShineBorder>
             ))}
           </div>
         </div>

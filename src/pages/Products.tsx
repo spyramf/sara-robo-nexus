@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { ShineBorder } from "@/components/ui/shine-border";
 
 const Products = () => {
   const productCategories = [
@@ -101,20 +102,29 @@ const Products = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {category.products.map((product, productIndex) => (
-                    <Card key={productIndex} className="card-gradient shadow-sara scale-on-hover">
-                      <CardHeader>
-                        <CardTitle className="text-lg leading-tight">{product.title}</CardTitle>
-                      </CardHeader>
-                      <CardContent>
-                        <CardDescription className="text-sm leading-relaxed mb-4">
-                          {product.description}
-                        </CardDescription>
-                        <Button variant="outline" size="sm" className="w-full group">
-                          Learn More
-                          <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                        </Button>
-                      </CardContent>
-                    </Card>
+                    <ShineBorder
+                      key={productIndex}
+                      borderRadius={12}
+                      borderWidth={2}
+                      duration={13}
+                      color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
+                      className="w-full min-w-0 h-full p-0 bg-transparent dark:bg-transparent"
+                    >
+                      <Card className="h-full card-gradient shadow-sara scale-on-hover border-0">
+                        <CardHeader>
+                          <CardTitle className="text-lg leading-tight">{product.title}</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                          <CardDescription className="text-sm leading-relaxed mb-4">
+                            {product.description}
+                          </CardDescription>
+                          <Button variant="outline" size="sm" className="w-full group">
+                            Learn More
+                            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                          </Button>
+                        </CardContent>
+                      </Card>
+                    </ShineBorder>
                   ))}
                 </div>
               </div>

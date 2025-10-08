@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Settings, Wrench, BarChart3, ArrowRight, CheckCircle } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { ShineBorder } from "@/components/ui/shine-border";
 
 const Services = () => {
   const services = [
@@ -150,16 +151,25 @@ const Services = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {additionalServices.map((service, index) => (
-              <Card key={index} className="card-gradient shadow-sara scale-on-hover">
-                <CardHeader>
-                  <CardTitle className="text-xl">{service.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base leading-relaxed">
-                    {service.description}
-                  </CardDescription>
-                </CardContent>
-              </Card>
+              <ShineBorder
+                key={index}
+                borderRadius={12}
+                borderWidth={2}
+                duration={15}
+                color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
+                className="w-full min-w-0 h-full p-0 bg-transparent dark:bg-transparent"
+              >
+                <Card className="h-full card-gradient shadow-sara scale-on-hover border-0">
+                  <CardHeader>
+                    <CardTitle className="text-xl">{service.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-base leading-relaxed">
+                      {service.description}
+                    </CardDescription>
+                  </CardContent>
+                </Card>
+              </ShineBorder>
             ))}
           </div>
         </div>
