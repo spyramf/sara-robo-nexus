@@ -5,6 +5,7 @@ import { Settings, Wrench, BarChart3, Factory, Award, Users } from "lucide-react
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { AuroraBackground } from "@/components/ui/aurora-background";
+import { GlowingEffect } from "@/components/ui/glowing-effect";
 import { motion } from "framer-motion";
 
 const Home = () => {
@@ -221,16 +222,28 @@ const Home = () => {
                 count: "6+ Services",
               },
             ].map((category, index) => (
-              <Card key={index} className="card-gradient shadow-sara scale-on-hover text-center">
-                <CardHeader>
-                  <div className="text-5xl mb-4">{category.icon}</div>
-                  <CardTitle className="text-xl mb-2">{category.title}</CardTitle>
-                  <div className="text-sm text-primary font-semibold">{category.count}</div>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-sm leading-relaxed">{category.description}</CardDescription>
-                </CardContent>
-              </Card>
+              <div key={index} className="relative min-h-[16rem]">
+                <div className="relative h-full rounded-xl border border-border p-1">
+                  <GlowingEffect
+                    spread={40}
+                    glow={true}
+                    disabled={false}
+                    proximity={64}
+                    inactiveZone={0.01}
+                    borderWidth={2}
+                  />
+                  <Card className="relative h-full card-gradient shadow-sara scale-on-hover text-center border-0">
+                    <CardHeader>
+                      <div className="text-5xl mb-4">{category.icon}</div>
+                      <CardTitle className="text-xl mb-2">{category.title}</CardTitle>
+                      <div className="text-sm text-primary font-semibold">{category.count}</div>
+                    </CardHeader>
+                    <CardContent>
+                      <CardDescription className="text-sm leading-relaxed">{category.description}</CardDescription>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
             ))}
           </div>
 
