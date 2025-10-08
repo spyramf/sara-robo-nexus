@@ -96,7 +96,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+          <div className="space-y-12">
             {/* Design & Manufacturing */}
             <FeatureSteps
               features={[
