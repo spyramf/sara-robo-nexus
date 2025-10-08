@@ -4,6 +4,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Settings, Wrench, BarChart3, Factory, Award, Users } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { AuroraBackground } from "@/components/ui/aurora-background";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
@@ -11,51 +13,54 @@ const Home = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0)`,
-            backgroundSize: '20px 20px'
-          }}></div>
-        </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="max-w-4xl">
+      <AuroraBackground>
+        <motion.div
+          initial={{ opacity: 0.0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.8,
+            ease: "easeInOut",
+          }}
+          className="relative flex flex-col gap-4 items-center justify-center px-4 w-full max-w-7xl mx-auto"
+        >
+          <div className="max-w-4xl text-center">
             <div className="mb-8">
-              <div className="inline-block px-4 py-2 bg-primary/20 text-primary-foreground rounded-full text-sm font-medium mb-6">
+              <div className="inline-block px-4 py-2 bg-primary/20 text-primary rounded-full text-sm font-medium mb-6">
                 Precision Manufacturing
               </div>
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight dark:text-white">
               Engineering Excellence in
               <span className="block text-secondary">Robotics & Automation</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/80 max-w-3xl">
+            <p className="text-xl md:text-2xl mb-8 dark:text-white/80 text-foreground/80 max-w-3xl mx-auto">
               Specializing in precision robotics, automation services, and custom special purpose machine manufacturing. 
               Delivering innovative solutions for your industrial automation needs.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 mb-12 justify-center">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg" asChild>
                 <Link to="/products">Get Started</Link>
               </Button>
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-slate-900 px-8 py-4 text-lg" asChild>
+              <Button variant="outline" size="lg" className="border-foreground dark:text-white hover:bg-foreground hover:text-background px-8 py-4 text-lg" asChild>
                 <Link to="/services">View Our Work</Link>
               </Button>
             </div>
             
             {/* Stats */}
-            <div className="grid grid-cols-2 gap-8 max-w-md">
+            <div className="grid grid-cols-2 gap-8 max-w-md mx-auto">
               <div>
                 <div className="text-3xl font-bold text-primary">6+ Years</div>
-                <div className="text-white/70">Experience</div>
+                <div className="dark:text-white/70 text-foreground/70">Experience</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-primary">200+</div>
-                <div className="text-white/70">Projects Delivered</div>
+                <div className="dark:text-white/70 text-foreground/70">Projects Delivered</div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </motion.div>
+      </AuroraBackground>
 
       {/* Intro Section */}
       <section className="py-20 bg-background">
