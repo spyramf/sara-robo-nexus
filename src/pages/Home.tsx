@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { ShineBorder } from "@/components/ui/shine-border";
 import { motion } from "framer-motion";
+import { FeatureSteps } from "@/components/ui/feature-section";
 
 const Home = () => {
   return (
@@ -97,78 +98,58 @@ const Home = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Design & Manufacturing */}
-            <div className="group">
-              <div className="bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-                <div className="h-64 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
-                  <Factory className="w-24 h-24 text-primary" />
-                </div>
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold mb-4">Design & Manufacturing</h3>
-                  <p className="text-muted-foreground mb-6">
-                    Advanced CAD design and state-of-the-art manufacturing using CNC, VMC, welding fixtures, and
-                    precision machining for consistent quality and efficient production processes.
-                  </p>
-                  <ul className="space-y-2 mb-6">
-                    <li className="flex items-center text-sm">
-                      <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                      SolidWorks, Catia, AutoCAD design
-                    </li>
-                    <li className="flex items-center text-sm">
-                      <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                      CNC, VMC precision manufacturing
-                    </li>
-                    <li className="flex items-center text-sm">
-                      <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                      Welding fixtures & manipulators
-                    </li>
-                    <li className="flex items-center text-sm">
-                      <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                      Sheet metal fabrication
-                    </li>
-                  </ul>
-                  <Button variant="outline" asChild>
-                    <Link to="/services">Learn More</Link>
-                  </Button>
-                </div>
-              </div>
-            </div>
+            <FeatureSteps
+              features={[
+                {
+                  step: "Step 1",
+                  title: "CAD Design Excellence",
+                  content: "Advanced 3D modeling using SolidWorks, Catia, and AutoCAD for precision engineering.",
+                  image: "https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=2070&auto=format&fit=crop",
+                },
+                {
+                  step: "Step 2",
+                  title: "Precision Manufacturing",
+                  content: "CNC and VMC machining with welding fixtures for consistent quality production.",
+                  image: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?q=80&w=2070&auto=format&fit=crop",
+                },
+                {
+                  step: "Step 3",
+                  title: "Sheet Metal Fabrication",
+                  content: "Complete fabrication services with welding manipulators and precision assembly.",
+                  image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2070&auto=format&fit=crop",
+                },
+              ]}
+              title="Design & Manufacturing"
+              autoPlayInterval={4000}
+              className="bg-background rounded-2xl shadow-lg"
+            />
 
             {/* Automation & Testing */}
-            <div className="group">
-              <div className="bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-                <div className="h-64 bg-gradient-to-br from-secondary/20 to-primary/20 flex items-center justify-center">
-                  <Settings className="w-24 h-24 text-secondary" />
-                </div>
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold mb-4">Automation & Testing</h3>
-                  <p className="text-muted-foreground mb-6">
-                    Custom automation solutions and special purpose machinery designed for specific manufacturing
-                    requirements, process visualization, and testing systems.
-                  </p>
-                  <ul className="space-y-2 mb-6">
-                    <li className="flex items-center text-sm">
-                      <div className="w-2 h-2 bg-secondary rounded-full mr-3"></div>
-                      Robotic welding cells & fixtures
-                    </li>
-                    <li className="flex items-center text-sm">
-                      <div className="w-2 h-2 bg-secondary rounded-full mr-3"></div>
-                      Gear box EOL testing machines
-                    </li>
-                    <li className="flex items-center text-sm">
-                      <div className="w-2 h-2 bg-secondary rounded-full mr-3"></div>
-                      Leak test machines
-                    </li>
-                    <li className="flex items-center text-sm">
-                      <div className="w-2 h-2 bg-secondary rounded-full mr-3"></div>
-                      Process automation flow testing
-                    </li>
-                  </ul>
-                  <Button variant="outline" asChild>
-                    <Link to="/products">Learn More</Link>
-                  </Button>
-                </div>
-              </div>
-            </div>
+            <FeatureSteps
+              features={[
+                {
+                  step: "Step 1",
+                  title: "Robotic Welding Solutions",
+                  content: "Custom robotic welding cells and fixtures for automated manufacturing processes.",
+                  image: "https://images.unsplash.com/photo-1581093458791-9d42e1bb6a46?q=80&w=2070&auto=format&fit=crop",
+                },
+                {
+                  step: "Step 2",
+                  title: "Testing Machines",
+                  content: "Gear box EOL testing and leak test machines for quality assurance.",
+                  image: "https://images.unsplash.com/photo-1581092583537-20d51b3b4f0b?q=80&w=2070&auto=format&fit=crop",
+                },
+                {
+                  step: "Step 3",
+                  title: "Process Automation",
+                  content: "Complete automation flow testing and process visualization systems.",
+                  image: "https://images.unsplash.com/photo-1581092162384-8987c1d64718?q=80&w=2070&auto=format&fit=crop",
+                },
+              ]}
+              title="Automation & Testing"
+              autoPlayInterval={4000}
+              className="bg-background rounded-2xl shadow-lg"
+            />
           </div>
         </div>
       </section>
