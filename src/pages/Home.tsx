@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero Section */}
       <AuroraBackground>
         <motion.div
@@ -25,28 +25,33 @@ const Home = () => {
           className="relative flex flex-col gap-4 items-center justify-center px-4 w-full max-w-7xl mx-auto"
         >
           <div className="max-w-4xl text-center">
-            <div className="mb-8">
+            {/* <div className="mb-8">
               <div className="inline-block px-4 py-2 bg-primary/20 text-primary rounded-full text-sm font-medium mb-6">
                 Precision Manufacturing
               </div>
-            </div>
+            </div> */}
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight dark:text-white">
               Engineering Excellence in
               <span className="block text-secondary">Robotics & Automation</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 dark:text-white/80 text-foreground/80 max-w-3xl mx-auto">
-              Specializing in precision robotics, automation services, and custom special purpose machine manufacturing. 
+              Specializing in precision robotics, automation services, and custom special purpose machine manufacturing.
               Delivering innovative solutions for your industrial automation needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-12 justify-center">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg" asChild>
                 <Link to="/products">Get Started</Link>
               </Button>
-              <Button variant="outline" size="lg" className="border-foreground dark:text-white hover:bg-foreground hover:text-background px-8 py-4 text-lg" asChild>
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-foreground dark:text-white hover:bg-foreground hover:text-background px-8 py-4 text-lg"
+                asChild
+              >
                 <Link to="/services">View Our Work</Link>
               </Button>
             </div>
-            
+
             {/* Stats */}
             <div className="grid grid-cols-2 gap-8 max-w-md mx-auto">
               <div>
@@ -68,7 +73,7 @@ const Home = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Your Partner for Automation Solution</h2>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-              We specialize in innovative automation solutions including robotic welding cells, leak testing SPMs, 
+              We specialize in innovative automation solutions including robotic welding cells, leak testing SPMs,
               machining fixtures, and process automation for industries worldwide.
             </p>
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg" asChild>
@@ -84,10 +89,11 @@ const Home = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Specializations</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              We provide comprehensive manufacturing solutions with precision engineering and innovative design approaches for industrial applications.
+              We provide comprehensive manufacturing solutions with precision engineering and innovative design
+              approaches for industrial applications.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Design & Manufacturing */}
             <div className="group">
@@ -98,8 +104,8 @@ const Home = () => {
                 <div className="p-8">
                   <h3 className="text-2xl font-bold mb-4">Design & Manufacturing</h3>
                   <p className="text-muted-foreground mb-6">
-                    Advanced CAD design and state-of-the-art manufacturing using CNC, VMC, welding fixtures, 
-                    and precision machining for consistent quality and efficient production processes.
+                    Advanced CAD design and state-of-the-art manufacturing using CNC, VMC, welding fixtures, and
+                    precision machining for consistent quality and efficient production processes.
                   </p>
                   <ul className="space-y-2 mb-6">
                     <li className="flex items-center text-sm">
@@ -135,7 +141,7 @@ const Home = () => {
                 <div className="p-8">
                   <h3 className="text-2xl font-bold mb-4">Automation & Testing</h3>
                   <p className="text-muted-foreground mb-6">
-                    Custom automation solutions and special purpose machinery designed for specific manufacturing 
+                    Custom automation solutions and special purpose machinery designed for specific manufacturing
                     requirements, process visualization, and testing systems.
                   </p>
                   <ul className="space-y-2 mb-6">
@@ -175,45 +181,45 @@ const Home = () => {
               Comprehensive range of automation products designed for diverse industrial applications
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 title: "Automation & Testing Solutions",
                 icon: "🔧",
                 description: "End-of-line testing, pressure decay, water dip, and helium leak testing SPMs",
-                count: "4+ Products"
+                count: "4+ Products",
               },
               {
-                title: "Robotic Welding Solutions", 
+                title: "Robotic Welding Solutions",
                 icon: "🤖",
                 description: "Complete robotic welding cells, fixtures for chassis, drive shaft, and track assembly",
-                count: "6+ Products"
+                count: "6+ Products",
               },
               {
                 title: "Welding SPMs",
                 icon: "⚡",
                 description: "Twin torch, servo driven, horizontal, rotary, and semi-automated welding machines",
-                count: "5+ Products"
+                count: "5+ Products",
               },
               {
                 title: "Machining & Powertrain",
                 icon: "🏭",
                 description: "HMC/VMC fixtures, hydraulic press, and powered conveyor systems",
-                count: "3+ Products"
+                count: "3+ Products",
               },
               {
                 title: "Welding Manipulators",
                 icon: "🔄",
                 description: "Manual and motorized welding positioners for precise part positioning",
-                count: "2+ Products"
+                count: "2+ Products",
               },
               {
                 title: "Design & Engineering",
                 icon: "📐",
                 description: "Complete automation solutions, reverse engineering, and new product development",
-                count: "6+ Services"
-              }
+                count: "6+ Services",
+              },
             ].map((category, index) => (
               <Card key={index} className="card-gradient shadow-sara scale-on-hover text-center">
                 <CardHeader>
@@ -222,9 +228,7 @@ const Home = () => {
                   <div className="text-sm text-primary font-semibold">{category.count}</div>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-sm leading-relaxed">
-                    {category.description}
-                  </CardDescription>
+                  <CardDescription className="text-sm leading-relaxed">{category.description}</CardDescription>
                 </CardContent>
               </Card>
             ))}
@@ -260,7 +264,13 @@ const Home = () => {
                 Industry-leading CAD software and engineering expertise for precision design solutions.
               </p>
               <div className="space-y-2">
-                {["SolidWorks 3D modeling", "CATIA advanced design", "AutoCAD technical drawings", "Inventor parametric design", "SolidEdge synchronous technology"].map((item, index) => (
+                {[
+                  "SolidWorks 3D modeling",
+                  "CATIA advanced design",
+                  "AutoCAD technical drawings",
+                  "Inventor parametric design",
+                  "SolidEdge synchronous technology",
+                ].map((item, index) => (
                   <div key={index} className="flex items-center text-sm">
                     <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
                     {item}
@@ -279,7 +289,13 @@ const Home = () => {
                 State-of-the-art manufacturing capabilities with precision machining and fabrication.
               </p>
               <div className="space-y-2">
-                {["CNC multi-axis machining", "VMC complex geometries", "Sheet metal fabrication", "Precision grinding operations", "Turning, drilling & lathe work"].map((item, index) => (
+                {[
+                  "CNC multi-axis machining",
+                  "VMC complex geometries",
+                  "Sheet metal fabrication",
+                  "Precision grinding operations",
+                  "Turning, drilling & lathe work",
+                ].map((item, index) => (
                   <div key={index} className="flex items-center text-sm">
                     <div className="w-2 h-2 bg-secondary rounded-full mr-3"></div>
                     {item}
@@ -298,7 +314,13 @@ const Home = () => {
                 Advanced simulation and testing services for process optimization and validation.
               </p>
               <div className="space-y-2">
-                {["Process visualization", "Automation flow testing", "Finite element analysis", "Virtual commissioning", "Quality assurance testing"].map((item, index) => (
+                {[
+                  "Process visualization",
+                  "Automation flow testing",
+                  "Finite element analysis",
+                  "Virtual commissioning",
+                  "Quality assurance testing",
+                ].map((item, index) => (
                   <div key={index} className="flex items-center text-sm">
                     <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
                     {item}
@@ -322,29 +344,31 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { 
-                step: "01", 
-                title: "Consultation & Analysis", 
-                description: "Understanding your requirements, challenges, and operational needs through detailed consultation.",
-                icon: "👥"
+              {
+                step: "01",
+                title: "Consultation & Analysis",
+                description:
+                  "Understanding your requirements, challenges, and operational needs through detailed consultation.",
+                icon: "👥",
               },
-              { 
-                step: "02", 
-                title: "Design & Engineering", 
-                description: "Creating detailed 3D designs, specifications, and simulations using advanced CAD software.",
-                icon: "📐"
+              {
+                step: "02",
+                title: "Design & Engineering",
+                description:
+                  "Creating detailed 3D designs, specifications, and simulations using advanced CAD software.",
+                icon: "📐",
               },
-              { 
-                step: "03", 
-                title: "Manufacturing & Testing", 
+              {
+                step: "03",
+                title: "Manufacturing & Testing",
                 description: "Precision manufacturing with quality control and comprehensive testing procedures.",
-                icon: "🏭"
+                icon: "🏭",
               },
-              { 
-                step: "04", 
-                title: "Installation & Support", 
+              {
+                step: "04",
+                title: "Installation & Support",
                 description: "Professional installation, commissioning, training, and ongoing technical support.",
-                icon: "🔧"
+                icon: "🔧",
               },
             ].map((item, index) => (
               <Card key={index} className="card-gradient shadow-sara text-center scale-on-hover">
@@ -356,9 +380,7 @@ const Home = () => {
                   <CardTitle className="text-xl mb-2">{item.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-sm leading-relaxed">
-                    {item.description}
-                  </CardDescription>
+                  <CardDescription className="text-sm leading-relaxed">{item.description}</CardDescription>
                 </CardContent>
               </Card>
             ))}
@@ -371,23 +393,21 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Engineering Solutions Since 2018
-              </h2>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">Engineering Solutions Since 2018</h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Founded in 2018 and based in Pune, SARA Robotics & Automation Services has established itself 
-                as a trusted partner in industrial automation. Our 4000 sq. ft. facility houses advanced VMC machines 
-                and a team of 20+ skilled professionals.
+                Founded in 2018 and based in Pune, SARA Robotics & Automation Services has established itself as a
+                trusted partner in industrial automation. Our 4000 sq. ft. facility houses advanced VMC machines and a
+                team of 20+ skilled professionals.
               </p>
               <p className="text-lg text-muted-foreground mb-8">
-                Our team combines traditional engineering expertise with modern technology to deliver innovative solutions 
-                that meet the unique challenges of today's manufacturing environment.
+                Our team combines traditional engineering expertise with modern technology to deliver innovative
+                solutions that meet the unique challenges of today's manufacturing environment.
               </p>
               <Button variant="outline" size="lg" asChild>
                 <Link to="/about">Learn About Our Journey</Link>
               </Button>
             </div>
-            
+
             <div className="grid grid-cols-2 gap-6">
               <div className="text-center p-6 bg-background rounded-xl shadow-lg">
                 <div className="text-4xl font-bold text-primary mb-2">200+</div>
@@ -413,12 +433,10 @@ const Home = () => {
       {/* CTA Section */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Partner with SARA Robotics & Automation Services
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Partner with SARA Robotics & Automation Services</h2>
           <p className="text-xl mb-8 text-primary-foreground/90 max-w-3xl mx-auto">
-            Ready to transform your manufacturing processes with cutting-edge automation solutions? 
-            Let's discuss your project requirements and create innovative solutions together.
+            Ready to transform your manufacturing processes with cutting-edge automation solutions? Let's discuss your
+            project requirements and create innovative solutions together.
           </p>
           <Button variant="secondary" size="lg" className="text-lg px-8 py-4" asChild>
             <Link to="/contact">Start Your Project</Link>
