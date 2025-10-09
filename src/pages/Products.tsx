@@ -137,6 +137,11 @@ const Products = () => {
           description: "Semi-automatic welding solutions combining manual control with automated precision.",
           image: semiAutomatedWelding,
         },
+        {
+          title: "Semi-Automated Welding SPM",
+          description: "Semi-automatic welding solutions combining manual control with automated precision.",
+          image: semiAutomatedWelding,
+        },
       ],
     },
     {
@@ -169,6 +174,11 @@ const Products = () => {
           title: "Manual Operated Gearbox-Type Welding Positioner",
           description: "Manual welding positioners with gearbox drive for precise part positioning.",
           image: manualPositioner,
+        },
+        {
+          title: "Single Axis Motorised Welding Positioner",
+          description: "Motorized single-axis positioners for automated welding applications.",
+          image: motorizedPositioner,
         },
         {
           title: "Single Axis Motorised Welding Positioner",
