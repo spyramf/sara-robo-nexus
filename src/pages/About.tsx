@@ -2,6 +2,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Eye, Target, Award, Shield, Users, Building2 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Milestones from "@/components/Milestones";
+import Team from "@/components/Team";
 
 const About = () => {
   const values = [
@@ -203,8 +205,14 @@ const About = () => {
         </div>
       </section>
 
+      {/* Milestones Timeline */}
+      <Milestones />
+
+      {/* Team Section */}
+      <Team />
+
       {/* Client Logos */}
-      <section className="py-16 md:py-24 bg-muted/30">
+      <section className="py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Trusted Partners</h2>
