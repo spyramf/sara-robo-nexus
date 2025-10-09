@@ -104,19 +104,22 @@ const Home = () => {
                   step: "Step 1",
                   title: "CAD Design Excellence",
                   content: "Advanced 3D modeling using SolidWorks, Catia, and AutoCAD for precision engineering.",
-                  image: "https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=2070&auto=format&fit=crop",
+                  image:
+                    "https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=2070&auto=format&fit=crop",
                 },
                 {
                   step: "Step 2",
                   title: "Precision Manufacturing",
                   content: "CNC and VMC machining with welding fixtures for consistent quality production.",
-                  image: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?q=80&w=2070&auto=format&fit=crop",
+                  image:
+                    "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?q=80&w=2070&auto=format&fit=crop",
                 },
                 {
                   step: "Step 3",
                   title: "Sheet Metal Fabrication",
                   content: "Complete fabrication services with welding manipulators and precision assembly.",
-                  image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2070&auto=format&fit=crop",
+                  image:
+                    "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2070&auto=format&fit=crop",
                 },
               ]}
               title="Design & Manufacturing"
@@ -131,19 +134,22 @@ const Home = () => {
                   step: "Step 1",
                   title: "Robotic Welding Solutions",
                   content: "Custom robotic welding cells and fixtures for automated manufacturing processes.",
-                  image: "https://images.unsplash.com/photo-1581093458791-9d42e1bb6a46?q=80&w=2070&auto=format&fit=crop",
+                  image:
+                    "https://images.unsplash.com/photo-1581093458791-9d42e1bb6a46?q=80&w=2070&auto=format&fit=crop",
                 },
                 {
                   step: "Step 2",
                   title: "Testing Machines",
                   content: "Gear box EOL testing and leak test machines for quality assurance.",
-                  image: "https://images.unsplash.com/photo-1581092583537-20d51b3b4f0b?q=80&w=2070&auto=format&fit=crop",
+                  image:
+                    "https://images.unsplash.com/photo-1581092583537-20d51b3b4f0b?q=80&w=2070&auto=format&fit=crop",
                 },
                 {
                   step: "Step 3",
                   title: "Process Automation",
                   content: "Complete automation flow testing and process visualization systems.",
-                  image: "https://images.unsplash.com/photo-1581092162384-8987c1d64718?q=80&w=2070&auto=format&fit=crop",
+                  image:
+                    "https://images.unsplash.com/photo-1581092162384-8987c1d64718?q=80&w=2070&auto=format&fit=crop",
                 },
               ]}
               title="Automation & Testing"
@@ -376,12 +382,12 @@ const Home = () => {
                       {item.step}
                     </div>
                     <div className="text-4xl mb-4">{item.icon}</div>
-                  <CardTitle className="text-xl mb-2">{item.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-sm leading-relaxed">{item.description}</CardDescription>
-                </CardContent>
-              </Card>
+                    <CardTitle className="text-xl mb-2">{item.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-sm leading-relaxed">{item.description}</CardDescription>
+                  </CardContent>
+                </Card>
               </ShineBorder>
             ))}
           </div>
@@ -431,7 +437,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      {/* <section className="py-20 bg-primary text-primary-foreground">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Partner with SARA Robotics & Automation Services</h2>
           <p className="text-xl mb-8 text-primary-foreground/90 max-w-3xl mx-auto">
@@ -442,7 +448,7 @@ const Home = () => {
             <Link to="/contact">Start Your Project</Link>
           </Button>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>
