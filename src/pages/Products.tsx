@@ -38,70 +38,177 @@ const Products = () => {
       title: "Automation & Testing Solutions",
       icon: "🔧",
       products: [
-        { title: "End-of-Line Testing SPM", description: "Advanced end-of-line testing equipment for comprehensive quality assurance and performance validation.", image: endOfLineTesting },
-        { title: "Pressure Decay Leak Testing SPM", description: "Precision pressure decay leak detection systems with high accuracy measurement capabilities.", image: pressureDecayTesting },
-        { title: "Water Dip Leak Testing SPM", description: "Water immersion leak testing solutions for reliable component quality verification.", image: waterDipTesting },
-        { title: "Helium Leak Testing SPM", description: "Ultra-sensitive helium leak detection systems for critical component testing.", image: heliumLeakTesting },
-      ]
+        {
+          title: "End-of-Line Testing SPM",
+          description:
+            "Advanced end-of-line testing equipment for comprehensive quality assurance and performance validation.",
+          image: endOfLineTesting,
+        },
+        {
+          title: "Pressure Decay Leak Testing SPM",
+          description: "Precision pressure decay leak detection systems with high accuracy measurement capabilities.",
+          image: pressureDecayTesting,
+        },
+        {
+          title: "Water Dip Leak Testing SPM",
+          description: "Water immersion leak testing solutions for reliable component quality verification.",
+          image: waterDipTesting,
+        },
+        {
+          title: "Helium Leak Testing SPM",
+          description: "Ultra-sensitive helium leak detection systems for critical component testing.",
+          image: heliumLeakTesting,
+        },
+      ],
     },
     {
-      title: "Robotic Welding Solutions", 
+      title: "Robotic Welding Solutions",
       icon: "🤖",
       products: [
-        { title: "Robotic Welding Cells with Fixtures", description: "Complete robotic welding solutions for Exhaust System, ROPS, Roll Guard, and Exhaust Muffler applications.", image: roboticWeldingCell },
-        { title: "Drive Shaft Welding Fixture", description: "Precision fixtures designed specifically for drive shaft welding operations.", image: driveShaftFixture },
-        { title: "Oscillation Axle Welding Fixture", description: "Specialized fixtures for oscillation axle assembly welding processes.", image: oscillationAxleFixture },
-        { title: "Chassis Welding Fixture", description: "Heavy-duty welding fixtures for chassis manufacturing and assembly.", image: chassisWeldingFixture },
-        { title: "Sway Pivot Welding Fixture", description: "Custom-designed fixtures for sway pivot component welding applications.", image: swayPivotFixture },
-        { title: "Track Assembly Welding Fixture", description: "Robust fixtures for track assembly welding in heavy machinery manufacturing.", image: trackAssemblyFixture },
-      ]
+        {
+          title: "Robotic Welding Cells with Fixtures",
+          description:
+            "Complete robotic welding solutions for Exhaust System, ROPS, Roll Guard, and Exhaust Muffler applications.",
+          image: roboticWeldingCell,
+        },
+        {
+          title: "Drive Shaft Welding Fixture",
+          description: "Precision fixtures designed specifically for drive shaft welding operations.",
+          image: driveShaftFixture,
+        },
+        {
+          title: "Oscillation Axle Welding Fixture",
+          description: "Specialized fixtures for oscillation axle assembly welding processes.",
+          image: oscillationAxleFixture,
+        },
+        {
+          title: "Chassis Welding Fixture",
+          description: "Heavy-duty welding fixtures for chassis manufacturing and assembly.",
+          image: chassisWeldingFixture,
+        },
+        {
+          title: "Sway Pivot Welding Fixture",
+          description: "Custom-designed fixtures for sway pivot component welding applications.",
+          image: swayPivotFixture,
+        },
+        {
+          title: "Track Assembly Welding Fixture",
+          description: "Robust fixtures for track assembly welding in heavy machinery manufacturing.",
+          image: trackAssemblyFixture,
+        },
+      ],
     },
     {
       title: "Welding SPMs",
       icon: "⚡",
       products: [
-        { title: "Twin Torch Welding SPM", description: "Advanced twin torch welding special purpose machine for high-speed, high-quality operations.", image: twinTorchWelding },
-        { title: "Servo Driven Welding SPM", description: "Precision servo-controlled welding systems for consistent, repeatable results.", image: servoDrivenWelding },
-        { title: "Horizontal Welding SPM", description: "Specialized horizontal welding machines for flat position welding applications.", image: horizontalWelding },
-        { title: "Rotary Welding SPM", description: "Rotary welding systems for cylindrical and circular component manufacturing.", image: rotaryWelding },
-        { title: "Semi-Automated Welding SPM", description: "Semi-automatic welding solutions combining manual control with automated precision.", image: semiAutomatedWelding },
-      ]
+        {
+          title: "Twin Torch Welding SPM",
+          description: "Advanced twin torch welding special purpose machine for high-speed, high-quality operations.",
+          image: twinTorchWelding,
+        },
+        {
+          title: "Servo Driven Welding SPM",
+          description: "Precision servo-controlled welding systems for consistent, repeatable results.",
+          image: servoDrivenWelding,
+        },
+        {
+          title: "Horizontal Welding SPM",
+          description: "Specialized horizontal welding machines for flat position welding applications.",
+          image: horizontalWelding,
+        },
+        {
+          title: "Rotary Welding SPM",
+          description: "Rotary welding systems for cylindrical and circular component manufacturing.",
+          image: rotaryWelding,
+        },
+        {
+          title: "Semi-Automated Welding SPM",
+          description: "Semi-automatic welding solutions combining manual control with automated precision.",
+          image: semiAutomatedWelding,
+        },
+      ],
     },
     {
       title: "Machining & Powertrain Solutions",
       icon: "🏭",
       products: [
-        { title: "HMC/VMC Machining Fixtures", description: "Precision fixtures for Piston Block, PRC Frame, Encoder Housing, Turntable, and Front Chassis machining.", image: machiningFixtures },
-        { title: "Hydraulic Press", description: "High-force hydraulic press systems for forming, stamping, and assembly operations.", image: hydraulicPress },
-        { title: "Powered Conveyor", description: "Automated conveyor systems for efficient material handling and production flow.", image: poweredConveyor },
-      ]
+        {
+          title: "HMC/VMC Machining Fixtures",
+          description:
+            "Precision fixtures for Piston Block, PRC Frame, Encoder Housing, Turntable, and Front Chassis machining.",
+          image: machiningFixtures,
+        },
+        {
+          title: "Hydraulic Press",
+          description: "High-force hydraulic press systems for forming, stamping, and assembly operations.",
+          image: hydraulicPress,
+        },
+        {
+          title: "Powered Conveyor",
+          description: "Automated conveyor systems for efficient material handling and production flow.",
+          image: poweredConveyor,
+        },
+      ],
     },
     {
       title: "Welding Manipulators & Positioners",
       icon: "🔄",
       products: [
-        { title: "Manual Operated Gearbox-Type Welding Positioner", description: "Manual welding positioners with gearbox drive for precise part positioning.", image: manualPositioner },
-        { title: "Single Axis Motorised Welding Positioner", description: "Motorized single-axis positioners for automated welding applications.", image: motorizedPositioner },
-      ]
+        {
+          title: "Manual Operated Gearbox-Type Welding Positioner",
+          description: "Manual welding positioners with gearbox drive for precise part positioning.",
+          image: manualPositioner,
+        },
+        {
+          title: "Single Axis Motorised Welding Positioner",
+          description: "Motorized single-axis positioners for automated welding applications.",
+          image: motorizedPositioner,
+        },
+      ],
     },
     {
       title: "Design & Engineering Services",
       icon: "📐",
       products: [
-        { title: "Welding Automation", description: "Complete welding automation solutions from design to implementation.", image: weldingAutomation },
-        { title: "Process Automation", description: "Custom process automation systems for enhanced manufacturing efficiency.", image: processAutomation },
-        { title: "Assembly Automation", description: "Automated assembly solutions for consistent quality and productivity.", image: assemblyAutomation },
-        { title: "Ergonomic Equipment", description: "Human-friendly automation equipment designed for operator safety and comfort.", image: ergonomicEquipment },
-        { title: "Material Handling Automation", description: "Automated material handling systems for streamlined production workflows.", image: materialHandling },
-        { title: "Reverse Engineering", description: "Professional reverse engineering services for component recreation and improvement.", image: reverseEngineering },
-      ]
+        {
+          title: "Welding Automation",
+          description: "Complete welding automation solutions from design to implementation.",
+          image: weldingAutomation,
+        },
+        {
+          title: "Process Automation",
+          description: "Custom process automation systems for enhanced manufacturing efficiency.",
+          image: processAutomation,
+        },
+        {
+          title: "Assembly Automation",
+          description: "Automated assembly solutions for consistent quality and productivity.",
+          image: assemblyAutomation,
+        },
+        {
+          title: "Ergonomic Equipment",
+          description: "Human-friendly automation equipment designed for operator safety and comfort.",
+          image: ergonomicEquipment,
+        },
+        {
+          title: "Material Handling Automation",
+          description: "Automated material handling systems for streamlined production workflows.",
+          image: materialHandling,
+        },
+        {
+          title: "Reverse Engineering",
+          description: "Professional reverse engineering services for component recreation and improvement.",
+          image: reverseEngineering,
+        },
+      ],
     },
   ];
 
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="py-16 md:py-24 bg-gradient-to-r from-primary/10 to-secondary/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -110,8 +217,8 @@ const Products = () => {
               Our <span className="text-primary">Products</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Comprehensive range of automation products designed to enhance manufacturing 
-              efficiency, precision, and reliability across diverse industrial applications.
+              Comprehensive range of automation products designed to enhance manufacturing efficiency, precision, and
+              reliability across diverse industrial applications.
             </p>
           </div>
         </div>
@@ -139,8 +246,8 @@ const Products = () => {
                     >
                       <Card className="h-full card-gradient shadow-sara scale-on-hover border-0 overflow-hidden">
                         <div className="aspect-video w-full overflow-hidden">
-                          <img 
-                            src={product.image} 
+                          <img
+                            src={product.image}
                             alt={product.title}
                             className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                           />
@@ -149,9 +256,7 @@ const Products = () => {
                           <CardTitle className="text-lg leading-tight">{product.title}</CardTitle>
                         </CardHeader>
                         <CardContent>
-                          <CardDescription className="text-sm leading-relaxed">
-                            {product.description}
-                          </CardDescription>
+                          <CardDescription className="text-sm leading-relaxed">{product.description}</CardDescription>
                         </CardContent>
                       </Card>
                     </ShineBorder>
@@ -181,7 +286,7 @@ const Products = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-primary text-primary-foreground">
+      {/* <section className="py-16 md:py-24 bg-primary text-primary-foreground">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Need a Custom Solution?
@@ -194,7 +299,7 @@ const Products = () => {
             Request Custom Quote
           </Button>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>
