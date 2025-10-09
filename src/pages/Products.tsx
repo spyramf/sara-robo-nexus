@@ -64,6 +64,11 @@ const Products = () => {
           description: "Ultra-sensitive helium leak detection systems for critical component testing.",
           image: heliumLeakTesting,
         },
+        {
+          title: "Pressure Decay Leak Testing SPM",
+          description: "Precision pressure decay leak detection systems with high accuracy measurement capabilities.",
+          image: pressureDecayTesting,
+        },
       ],
     },
     {
