@@ -46,20 +46,15 @@ const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
-              <Button variant="default" className="ml-4" asChild>
+              {/* <Button variant="default" className="ml-4" asChild>
                 <Link to="/contact">Get Quote</Link>
-              </Button>
+              </Button> */}
             </div>
           </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-foreground"
-            >
+            <Button variant="ghost" size="sm" onClick={() => setIsOpen(!isOpen)} className="text-foreground">
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </Button>
           </div>
