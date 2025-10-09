@@ -18,7 +18,7 @@ const Services = () => {
         "AutoCAD technical drawings",
         "Inventor parametric design",
         "SolidEdge synchronous technology",
-        "Design optimization and validation"
+        "Design optimization and validation",
       ],
     },
     {
@@ -32,7 +32,7 @@ const Services = () => {
         "Sheet metal fabrication and forming",
         "Precision machining and finishing",
         "Grinding operations for tight tolerances",
-        "Turning, drilling, and lathe operations"
+        "Turning, drilling, and lathe operations",
       ],
     },
     {
@@ -46,7 +46,7 @@ const Services = () => {
         "Finite element analysis (FEA)",
         "Computational fluid dynamics (CFD)",
         "Thermal analysis and validation",
-        "Virtual commissioning and testing"
+        "Virtual commissioning and testing",
       ],
     },
   ];
@@ -73,7 +73,7 @@ const Services = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="py-16 md:py-24 bg-gradient-to-r from-primary/10 to-secondary/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -82,8 +82,8 @@ const Services = () => {
               Our <span className="text-primary">Services</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Comprehensive automation services from concept to completion, delivered by 
-              experienced engineers and skilled technicians committed to excellence.
+              Comprehensive automation services from concept to completion, delivered by experienced engineers and
+              skilled technicians committed to excellence.
             </p>
           </div>
         </div>
@@ -96,19 +96,20 @@ const Services = () => {
             {services.map((service, index) => {
               const IconComponent = service.icon;
               const isEven = index % 2 === 0;
-              
+
               return (
-                <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${!isEven ? 'lg:grid-flow-col-dense' : ''}`}>
-                  <div className={`slide-up ${!isEven ? 'lg:col-start-2' : ''}`}>
+                <div
+                  key={index}
+                  className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${!isEven ? "lg:grid-flow-col-dense" : ""}`}
+                >
+                  <div className={`slide-up ${!isEven ? "lg:col-start-2" : ""}`}>
                     <div className="flex items-center space-x-4 mb-6">
                       <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
                         <IconComponent className="w-8 h-8 text-primary" />
                       </div>
                       <h2 className="text-3xl md:text-4xl font-bold">{service.title}</h2>
                     </div>
-                    <p className="text-lg text-muted-foreground mb-8">
-                      {service.description}
-                    </p>
+                    <p className="text-lg text-muted-foreground mb-8">{service.description}</p>
                     <div className="space-y-3 mb-8">
                       {service.features.map((feature, featureIndex) => (
                         <div key={featureIndex} className="flex items-center space-x-3">
@@ -122,7 +123,7 @@ const Services = () => {
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </div>
-                  <div className={`slide-up ${!isEven ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
+                  <div className={`slide-up ${!isEven ? "lg:col-start-1 lg:row-start-1" : ""}`}>
                     <div className="relative">
                       <img
                         src={service.image}
@@ -148,7 +149,7 @@ const Services = () => {
               Comprehensive support services to ensure the success of your automation projects
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {additionalServices.map((service, index) => (
               <ShineBorder
@@ -164,9 +165,7 @@ const Services = () => {
                     <CardTitle className="text-xl">{service.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription className="text-base leading-relaxed">
-                      {service.description}
-                    </CardDescription>
+                    <CardDescription className="text-base leading-relaxed">{service.description}</CardDescription>
                   </CardContent>
                 </Card>
               </ShineBorder>
@@ -205,7 +204,7 @@ const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-primary text-primary-foreground">
+      {/* <section className="py-16 md:py-24 bg-primary text-primary-foreground">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Start Your Project?
@@ -218,7 +217,7 @@ const Services = () => {
             Get Started Today
           </Button>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>
