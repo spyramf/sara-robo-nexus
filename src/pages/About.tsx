@@ -4,6 +4,17 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Milestones from "@/components/Milestones";
 import Team from "@/components/Team";
+import { Logos3 } from "@/components/ui/logos3";
+import onwardLogo from "@/assets/partners/onward.png";
+import coramLogo from "@/assets/partners/coram.png";
+import seilerLogo from "@/assets/partners/seiler.png";
+import wirtgenLogo from "@/assets/partners/wirtgen.png";
+import dranLogo from "@/assets/partners/dran-engineers.png";
+import venusLogo from "@/assets/partners/venus.png";
+import kapLogo from "@/assets/partners/kap.png";
+import sandvikLogo from "@/assets/partners/sandvik.png";
+import putzmeisterLogo from "@/assets/partners/putzmeister.png";
+import chromewellLogo from "@/assets/partners/chromewell.png";
 
 const About = () => {
   const values = [
@@ -34,8 +45,67 @@ const About = () => {
     { icon: Users, title: "20+ Professionals", description: "Skilled engineers and technicians" },
   ];
 
-  const clientLogos = [
-    "Client 1", "Client 2", "Client 3", "Client 4", "Client 5", "Client 6"
+  const partnerLogos = [
+    {
+      id: "onward",
+      description: "Onward Technologies",
+      image: onwardLogo,
+      className: "h-12 w-auto object-contain",
+    },
+    {
+      id: "coram",
+      description: "Coram Group",
+      image: coramLogo,
+      className: "h-12 w-auto object-contain",
+    },
+    {
+      id: "seiler",
+      description: "Seiler Vakuumtechnik",
+      image: seilerLogo,
+      className: "h-16 w-auto object-contain",
+    },
+    {
+      id: "wirtgen",
+      description: "Wirtgen Group",
+      image: wirtgenLogo,
+      className: "h-12 w-auto object-contain",
+    },
+    {
+      id: "dran",
+      description: "Dran Engineers Pvt. Ltd.",
+      image: dranLogo,
+      className: "h-12 w-auto object-contain",
+    },
+    {
+      id: "venus",
+      description: "Venus Automation",
+      image: venusLogo,
+      className: "h-12 w-auto object-contain",
+    },
+    {
+      id: "kap",
+      description: "KAP",
+      image: kapLogo,
+      className: "h-12 w-auto object-contain",
+    },
+    {
+      id: "sandvik",
+      description: "Sandvik",
+      image: sandvikLogo,
+      className: "h-16 w-auto object-contain",
+    },
+    {
+      id: "putzmeister",
+      description: "Putzmeister",
+      image: putzmeisterLogo,
+      className: "h-12 w-auto object-contain",
+    },
+    {
+      id: "chromewell",
+      description: "Chromewell Engineering",
+      image: chromewellLogo,
+      className: "h-12 w-auto object-contain",
+    },
   ];
 
   return (
@@ -211,27 +281,11 @@ const About = () => {
       {/* Team Section */}
       <Team />
 
-      {/* Client Logos */}
-      <section className="py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Trusted Partners</h2>
-            <p className="text-lg text-muted-foreground">
-              We're proud to work with industry leaders who trust us with their automation needs
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center opacity-60">
-            {clientLogos.map((client, index) => (
-              <div key={index} className="text-center p-4 border rounded-lg bg-background">
-                <div className="h-12 bg-muted rounded flex items-center justify-center">
-                  <span className="text-sm font-medium">{client}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Trusted Partners */}
+      <Logos3 
+        heading="Trusted Partners" 
+        logos={partnerLogos}
+      />
 
       <Footer />
     </div>
