@@ -173,7 +173,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "Automation & Testing Solutions",
+                title: "Automation Solutions",
                 icon: "🔧",
                 description: "End-of-line testing, pressure decay, water dip, and helium leak testing SPMs",
                 count: "4+ Products",
