@@ -3,6 +3,9 @@ import { Settings, Wrench, BarChart3, CheckCircle } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { ShineBorder } from "@/components/ui/shine-border";
+import designServicesImg from "@/assets/design-cad.webp";
+import manufacturingServicesImg from "@/assets/precision-manufacturing.webp";
+import simulationServicesImg from "@/assets/fabrication-welding.webp";
 
 const Services = () => {
   const services = [
@@ -10,7 +13,7 @@ const Services = () => {
       icon: Settings,
       title: "Design Services",
       description: "Comprehensive design solutions using industry-leading CAD software and engineering expertise.",
-      image: "/placeholder.svg",
+      image: designServicesImg,
       features: [
         "SolidWorks 3D modeling and simulation",
         "Catia advanced surface modeling",
@@ -24,7 +27,7 @@ const Services = () => {
       icon: Wrench,
       title: "Manufacturing Services",
       description: "State-of-the-art manufacturing capabilities with precision machining and fabrication expertise.",
-      image: "/placeholder.svg",
+      image: manufacturingServicesImg,
       features: [
         "CNC machining with multi-axis capability",
         "VMC operations for complex geometries",
@@ -38,7 +41,7 @@ const Services = () => {
       icon: BarChart3,
       title: "Simulation Services",
       description: "Advanced simulation and analysis services for process optimization and validation.",
-      image: "/placeholder.svg",
+      image: simulationServicesImg,
       features: [
         "Process visualization and modeling",
         "Automation flow testing and optimization",
