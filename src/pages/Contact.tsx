@@ -214,31 +214,6 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="py-16 md:py-24 bg-muted/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Find Us</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Visit our modern facility in Pune to see our capabilities firsthand
-            </p>
-          </div>
-          
-          <div className="rounded-lg overflow-hidden shadow-sara">
-            <div className="aspect-video bg-muted flex items-center justify-center">
-              <div className="text-center p-8">
-                <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2">Interactive Map</h3>
-                <p className="text-muted-foreground">
-                  Google Maps integration would be embedded here showing our exact location 
-                  at Shop no 1, & 2, Phase 1, ANANT INDUSTRIAL ESTATE, S.NO.28, 23, Dhayari Narhe Rd, Dhayari, Pune, Maharashtra 411041
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <Footer />
     </div>
   );
