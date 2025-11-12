@@ -3,8 +3,8 @@ import { Eye, Target, Award, Shield, Users, Building2 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Milestones from "@/components/Milestones";
-import Team from "@/components/Team";
 import { Logos3 } from "@/components/ui/logos3";
+import advancedManufacturing from "@/assets/advanced-manufacturing.webp";
 import onwardLogo from "@/assets/partners/onward.png";
 import coramLogo from "@/assets/partners/coram.png";
 import seilerLogo from "@/assets/partners/seiler.png";
@@ -240,7 +240,7 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="slide-up">
               <img
-                src="/placeholder.svg"
+                src={advancedManufacturing}
                 alt="SARA Robotics Manufacturing Facility"
                 className="rounded-lg shadow-sara w-full h-80 object-cover"
               />
@@ -277,9 +277,6 @@ const About = () => {
 
       {/* Milestones Timeline */}
       <Milestones />
-
-      {/* Team Section */}
-      <Team />
 
       {/* Trusted Partners */}
       <Logos3 
