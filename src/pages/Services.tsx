@@ -1,6 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Settings, Wrench, BarChart3, ArrowRight, CheckCircle } from "lucide-react";
+import { Settings, Wrench, BarChart3, CheckCircle } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { ShineBorder } from "@/components/ui/shine-border";
@@ -110,7 +109,7 @@ const Services = () => {
                       <h2 className="text-3xl md:text-4xl font-bold">{service.title}</h2>
                     </div>
                     <p className="text-lg text-muted-foreground mb-8">{service.description}</p>
-                    <div className="space-y-3 mb-8">
+                    <div className="space-y-3">
                       {service.features.map((feature, featureIndex) => (
                         <div key={featureIndex} className="flex items-center space-x-3">
                           <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
@@ -118,10 +117,6 @@ const Services = () => {
                         </div>
                       ))}
                     </div>
-                    <Button variant="outline" size="lg" className="group">
-                      Learn More About This Service
-                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </Button>
                   </div>
                   <div className={`slide-up ${!isEven ? "lg:col-start-1 lg:row-start-1" : ""}`}>
                     <div className="relative">
