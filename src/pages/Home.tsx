@@ -8,6 +8,9 @@ import { AuroraBackground } from "@/components/ui/aurora-background";
 import { ShineBorder } from "@/components/ui/shine-border";
 import { motion } from "framer-motion";
 import { FeatureSteps } from "@/components/ui/feature-section";
+import designCad from "@/assets/design-cad.webp";
+import fabricationWelding from "@/assets/fabrication-welding.webp";
+import precisionManufacturing from "@/assets/precision-manufacturing.webp";
 
 const Home = () => {
   return (
@@ -104,22 +107,19 @@ const Home = () => {
                   step: "Step 1",
                   title: "CAD Design Excellence",
                   content: "Advanced 3D modeling using SolidWorks, Catia, and AutoCAD for precision engineering.",
-                  image:
-                    "https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=2070&auto=format&fit=crop",
+                  image: designCad,
                 },
                 {
                   step: "Step 2",
                   title: "Precision Manufacturing",
                   content: "CNC and VMC machining with welding fixtures for consistent quality production.",
-                  image:
-                    "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?q=80&w=2070&auto=format&fit=crop",
+                  image: precisionManufacturing,
                 },
                 {
                   step: "Step 3",
                   title: "Sheet Metal Fabrication",
                   content: "Complete fabrication services with welding manipulators and precision assembly.",
-                  image:
-                    "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2070&auto=format&fit=crop",
+                  image: fabricationWelding,
                 },
               ]}
               title="Design & Manufacturing"
