@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { MapPin, Phone, Mail, Clock, Linkedin, Twitter } from "lucide-react";
+import { MapPin, Phone, Mail, Linkedin, Twitter } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { useToast } from "@/hooks/use-toast";
@@ -46,14 +46,6 @@ const Contact = () => {
       ],
     },
     {
-      icon: MapPin,
-      title: "Office Address", 
-      content: [
-        "S.NO.34/35, Flat No. C1-305, Premia Society,",
-        "Near Zeal College, Narhe, Pune 411041"
-      ],
-    },
-    {
       icon: Phone,
       title: "Phone Numbers",
       content: ["+91-9960222472", "+91-8668741866"],
@@ -62,14 +54,8 @@ const Contact = () => {
       icon: Mail,
       title: "Email Address",
       content: [
-        "rahulr@sararoboautomation.com",
-        "marketing@sararoboautomation.com"
+        "rahulr@sararoboautomation.com"
       ],
-    },
-    {
-      icon: Clock,
-      title: "Website",
-      content: ["www.sararoboautomation.com"],
     },
   ];
 
