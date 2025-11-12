@@ -11,6 +11,9 @@ import { FeatureSteps } from "@/components/ui/feature-section";
 import designCad from "@/assets/design-cad.webp";
 import fabricationWelding from "@/assets/fabrication-welding.webp";
 import precisionManufacturing from "@/assets/precision-manufacturing.webp";
+import roboticWelding from "@/assets/robotic-welding.webp";
+import leakTesting from "@/assets/leak-testing.webp";
+import processAutomation from "@/assets/process-automation.webp";
 
 const Home = () => {
   return (
@@ -134,22 +137,19 @@ const Home = () => {
                   step: "Step 1",
                   title: "Robotic Welding Solutions",
                   content: "Custom robotic welding cells and fixtures for automated manufacturing processes.",
-                  image:
-                    "https://images.unsplash.com/photo-1581093458791-9d42e1bb6a46?q=80&w=2070&auto=format&fit=crop",
+                  image: roboticWelding,
                 },
                 {
                   step: "Step 2",
                   title: "Testing Machines",
                   content: "Gear box EOL testing and leak test machines for quality assurance.",
-                  image:
-                    "https://images.unsplash.com/photo-1581092583537-20d51b3b4f0b?q=80&w=2070&auto=format&fit=crop",
+                  image: leakTesting,
                 },
                 {
                   step: "Step 3",
                   title: "Process Automation",
                   content: "Complete automation flow testing and process visualization systems.",
-                  image:
-                    "https://images.unsplash.com/photo-1581092162384-8987c1d64718?q=80&w=2070&auto=format&fit=crop",
+                  image: processAutomation,
                 },
               ]}
               title="Automation & Testing"
