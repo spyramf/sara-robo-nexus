@@ -102,10 +102,10 @@ const Footer = () => {
               <li className="text-gray-600 flex items-start">
                 <MapPin className="w-5 h-5 mr-2 mt-1 text-gray-400 flex-shrink-0" />
                 <span className="text-sm">
-                  Survey No. 38/1, Shade No. 3,<br />
-                  Nanashri Warehouse,<br />
-                  Khedekar Industry Estate,<br />
-                  Narhegaon - 411041
+                  Shop no 1, & 2, Phase 1,<br />
+                  ANANT INDUSTRIAL ESTATE,<br />
+                  S.NO.28, 23, Dhayari Narhe Rd,<br />
+                  Dhayari, Pune, Maharashtra 411041
                 </span>
               </li>
               <li>

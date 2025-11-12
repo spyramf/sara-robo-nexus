@@ -39,9 +39,10 @@ const Contact = () => {
       icon: MapPin,
       title: "Works Address",
       content: [
-        "S.No.28/23, Shed No-01 & 02, Phase-1,",
-        "Anant Industrial Estate, Dhayari Narhe Road,",
-        "Dhayari, Pune 411041"
+        "Shop no 1, & 2, Phase 1,",
+        "ANANT INDUSTRIAL ESTATE, S.NO.28, 23,",
+        "Dhayari Narhe Rd, Dhayari,",
+        "Pune, Maharashtra 411041"
       ],
     },
     {
@@ -230,7 +231,7 @@ const Contact = () => {
                 <h3 className="text-xl font-semibold mb-2">Interactive Map</h3>
                 <p className="text-muted-foreground">
                   Google Maps integration would be embedded here showing our exact location 
-                  at S.No.28/23, Shed No-01 & 02, Phase-1, Anant Industrial Estate, Dhayari Narhe Road, Dhayari, Pune 411041
+                  at Shop no 1, & 2, Phase 1, ANANT INDUSTRIAL ESTATE, S.NO.28, 23, Dhayari Narhe Rd, Dhayari, Pune, Maharashtra 411041
                 </p>
               </div>
             </div>
